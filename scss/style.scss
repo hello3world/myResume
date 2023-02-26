@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:wght@900&display=swap');
+@import 'reset.scss';
+@import 'var.scss';
+@import 'mixin.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* font-family: 'Playfair Display',
+serif;
+font-family: 'PT Sans Narrow',
+sans-serif; */

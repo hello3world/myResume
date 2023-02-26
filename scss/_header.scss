@@ -1,0 +1,67 @@
+.header {
+
+  .header--bg {
+    background-image: url('/assets/img/bgHeader.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 125px;
+
+    position: relative;
+
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 180px 0 209px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 421px;
+      left: 238px;
+      width: 152px;
+      height: 152px;
+      background-image: url('/assets/greeting.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__avatar {}
+
+  &__info {}
+
+  &__job {
+    margin-bottom: 10px;
+
+    @include header3;
+  }
+
+  &__name {
+    margin-bottom: 40px;
+
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 126px;
+    line-height: 0.89;
+    letter-spacing: -2px;
+    color: $colorText;
+  }
+
+  &__btn {
+    padding: 19px 60px;
+
+    font-family: 'PT Sans Narrow';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: $colorPrimary;
+
+  }
+}

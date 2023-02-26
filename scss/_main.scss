@@ -1,0 +1,126 @@
+.main {
+
+  &__content {
+    display: flex;
+    column-gap: 125px;
+
+    padding: 90px 165px 78px;
+  }
+
+
+  &__statistics {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+  }
+
+  &__biografy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 66px;
+  }
+}
+
+.skillset {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+.awards {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+.careerTraits {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+.recentWorks {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+
+  &__link {}
+}
+
+.aboutMe {
+
+  &__title {
+    @include header2;
+  }
+
+  &__text {}
+}
+
+.indent {
+  padding: 80px 0 0;
+
+  &__rectangle {
+    width: 71px;
+    height: 10px;
+
+    background: #0699A6;
+  }
+}
+
+.indent--padBottom {
+  padding: 0 0 80px;
+}
+
+.experience {
+
+  &__title {
+    @include header2;
+  }
+
+  &__unit {}
+
+  &__header {}
+
+  &__job {
+    @include header3;
+    letter-spacing: 1px;
+  }
+
+  &__date {}
+
+  &__desc {}
+}
+
+.education {
+
+  &__title {
+    @include header2;
+  }
+
+  &__university {
+    @include header3;
+    letter-spacing: 1px;
+  }
+
+  &__date {}
+}

@@ -1,0 +1,48 @@
+.footer {
+
+  .footer--bg {
+    background-image: url('/assets/img/bgFooter.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 177px 0 111px;
+    margin: 0 auto;
+
+    max-width: 793px;
+  }
+
+  &__cta {
+    margin-bottom: 40px;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 66px;
+    line-height: 1.24;
+    text-align: center;
+    letter-spacing: -1.1px;
+    color: $colotText;
+  }
+
+  &__email {
+    margin-bottom: 66px;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.28;
+    text-align: center;
+    color: $colorPrimary;
+  }
+}
+
+.socialList {
+
+  &__item {}
+
+  &__link {}
+}
