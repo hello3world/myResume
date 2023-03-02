@@ -1,5 +1,5 @@
 @mixin textStyle {
-  font-family: 'PT Sans Narrow';
+  font-family: 'PT Sans Narrow', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -8,8 +8,7 @@
 }
 
 @mixin header3 {
-  margin-bottom: 10px;
-  font-family: 'PT Sans Narrow';
+  font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
@@ -19,8 +18,7 @@
 }
 
 @mixin header2 {
-  margin-bottom: 20px;
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 36px;
   line-height: 1.28;

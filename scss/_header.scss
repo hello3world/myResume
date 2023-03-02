@@ -6,6 +6,58 @@
     background-position: top center;
   }
 
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 70px 0 0;
+  }
+
+  .contacts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: all 1s ease-in-out;
+
+    &__close-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      color: $colorAccent;
+      cursor: pointer;
+      font-size: 20px;
+      background: transparent;
+      opacity: 0;
+      transition: opacity ease-in 0.5s;
+
+
+    }
+
+    .close_btn--opacity {
+      opacity: 1;
+    }
+
+    &__close-btn:focus {
+      outline: none;
+    }
+
+  }
+
+  .contacts--position {
+    margin-left: 70px;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -15,12 +67,12 @@
 
     max-width: 1110px;
     margin: 0 auto;
-    padding: 180px 0 209px;
+    padding: 125px 0 209px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 421px;
+      top: 365px;
       left: 238px;
       width: 152px;
       height: 152px;

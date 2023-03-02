@@ -6,154 +6,182 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <title>resume</title>
+  <script src="https://kit.fontawesome.com/0c654557a8.js" crossorigin="anonymous"></script>
+  <title>Resume</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header--bg">
-      <div class="header__content">
-        <img src="/assets/img/avatar.png" alt="avatar" class="header__avatar">
-        <div class="header__info">
-          <h3 class="header__job">Frontend developer</h3>
-          <h1 class="header__name">Yauheni Paulovich</h1>
-          <a href="#" class="header__btn">Contact Me</a>
+  <div class="body__canvas"><canvas class="canvas" id="c"></canvas><a href="#" class="body-btn">BACK</a></div>
+  <div class='body__content'>
+    <header class="header">
+      <div class="container header--bg">
+        <div class="header__toolbar">
+          <div class="contacts contacts--position">
+            <h4 contacts__title>Get in touch on</h4>
+            <ul class="socialList">
+              <li class="socialList__item"><a href="#" class="socialList__link"><img
+                    src="/assets/img/social/facebook--brown.svg" alt="facebook" class="socialList__img"></a></li>
+              <li class="socialList__item"><a href="#" class="socialList__link"><img
+                    src="/assets/img/social/instagram--brown.svg" alt="instagram" class="socialList__img"></a></li>
+              <li class="socialList__item"><a href="#" class="socialList__link"><img
+                    src="/assets/img/social/linkedin--brown.svg" alt="linkedin" class="socialList__img"></a></li>
+              <li class="socialList__item"><a href="#" class="socialList__link"><img
+                    src="/assets/img/social/twitter--brown.svg" alt="twitter" class="socialList__img"></a></li>
+              <li class="socialList__item"><a href="#" class="socialList__link"><img src="" alt=""
+                    class="socialList__img"></a></li>
+            </ul><button class="contacts__close-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="changeTheme"><input type="checkbox" class="checkbox" id="chk" /><label class="label" for="chk"><i
+                class="fas fa-moon"></i><i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label></div>
+        </div>
+        <div class="header__content"><img src="/assets/img/avatar.png" alt="avatar" class="header__avatar">
+          <div class="header__info">
+            <h3 class="header__job">Frontend developer</h3>
+            <h1 class="header__name">Yauheni Paulovich</h1><a href="#" class="header__btn">Contact Me</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main class="main">
-    <div class="container">
-      <div class="main__content">
-
-
-
-        <div class="main__statistics">
-          <section class="skillset">
-            <h3 class="skillset__title">Skillset</h3>
-            <ul class="skillset__list">
-              <li class="skillset__item">Visual Design</li>
-              <li class="skillset__item">Visual Design</li>
-              <li class="skillset__item">Visual Design</li>
-              <li class="skillset__item">Visual Design</li>
-              <li class="skillset__item">Visual Design</li>
-            </ul>
-          </section>
-
-          <section class="awards">
-            <h3 class="awards__title">Awards</h3>
-            <ul class="awards__list">
-              <li class="awards__item">Award 1 — Mar. 2019</li>
-              <li class="awards__item">Award 1 — Mar. 2019</li>
-              <li class="awards__item">Award 1 — Mar. 2019</li>
-              <li class="awards__item">Award 1 — Mar. 2019</li>
-              <li class="awards__item">Award 1 — Mar. 2019</li>
-            </ul>
-          </section>
-
-          <section class="careerTraits">
-            <h3 class="careerTraits__title">Career Traits</h3>
-            <ul class="careerTraits__list">
-              <li class="careerTraits__item">Holistic Designer - Design should be treated as a living organism, guided
-                by
-                the environment it lives in as a whole.</li>
-              <li class="careerTraits__item">Holistic Designer - Design should be treated as a living organism, guided
-                by
-                the environment it lives in as a whole.</li>
-              <li class="careerTraits__item">Holistic Designer - Design should be treated as a living organism, guided
-                by
-                the environment it lives in as a whole.</li>
-              <li class="careerTraits__item">Holistic Designer - Design should be treated as a living organism, guided
-                by
-                the environment it lives in as a whole.</li>
-              <li class="careerTraits__item">Holistic Designer - Design should be treated as a living organism, guided
-                by
-                the environment it lives in as a whole.</li>
-            </ul>
-          </section>
-
-          <section class="recentWorks">
-            <h3 class="recentWorks__title">Recent Works</h3>
-            <ul class="recentWorks__list">
-              <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
-              <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
-              <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
-              <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
-              <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
-            </ul>
-          </section>
-
-        </div>
-
-        <div class="main__biografy">
-          <section class="aboutMe">
-            <h2 class="aboutMe__title">About Me</h2>
-            <p class="aboutMe__text">Use this area to say something about yourself or describe your goals. Tum dicere
-              exorsus est cur verear, ne ad id omnia referri oporteat, ipsum per se ipsam voluptatem, quia consequuntur
-              magni dolores eos, qui blanditiis praesentium voluptatum deleniti atque insitam in ea quid est eligendi
-              optio,
-              cumque nihil ut ipsi auctori huius disciplinae placet: constituam, quid.</p>
-            <div class="indent">
-              <div class="indent__rectangle">
-                <!--  -->
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <div class="main__statistics">
+            <section class="skillset">
+              <h3 class="skillset__title">Skillset</h3>
+              <ul class="skillset__list">
+                <li class="skillset__item">JAVA SCRIPT</li>
+                <li class="skillset__item">HTML</li>
+                <li class="skillset__item">SASS</li>
+                <li class="skillset__item">CSS</li>
+                <li class="skillset__item">GIT</li>
+              </ul>
+            </section>
+            <section class="awards">
+              <h3 class="awards__title">Awards</h3>
+              <ul class="awards__list">
+                <li class="awards__item">Award 1 — Mar. 2019</li>
+                <li class="awards__item">Award 1 — Mar. 2019</li>
+                <li class="awards__item">Award 1 — Mar. 2019</li>
+                <li class="awards__item">Award 1 — Mar. 2019</li>
+                <li class="awards__item">Award 1 — Mar. 2019</li>
+              </ul>
+            </section>
+            <section class="careerTraits">
+              <h3 class="careerTraits__title">Career Traits</h3>
+              <ul class="careerTraits__list">
+                <li class="careerTraits__item"><span class="careerTraits__item--bold">Holistic Designer</span>- Design
+                  should be treated as a living organism,
+                  guided by the environment it lives in as a whole.</li>
+                <li class="careerTraits__item"><span class="careerTraits__item--bold">Holistic Designer</span>- Design
+                  should be treated as a living organism,
+                  guided by the environment it lives in as a whole.</li>
+                <li class="careerTraits__item"><span class="careerTraits__item--bold">Holistic Designer</span>- Design
+                  should be treated as a living organism,
+                  guided by the environment it lives in as a whole.</li>
+                <li class="careerTraits__item"><span class="careerTraits__item--bold">Holistic Designer</span>- Design
+                  should be treated as a living organism,
+                  guided by the environment it lives in as a whole.</li>
+                <li class="careerTraits__item"><span class="careerTraits__item--bold">Holistic Designer</span>- Design
+                  should be treated as a living organism,
+                  guided by the environment it lives in as a whole.</li>
+              </ul>
+            </section>
+            <section class="recentWorks">
+              <h3 class="recentWorks__title">Recent Works</h3>
+              <ul class="recentWorks__list">
+                <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
+                <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
+                <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
+                <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
+                <li class="recentWorks__item"><a href="#" class="recentWorks__link">thedonut.co</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="main__biografy">
+            <section class="aboutMe">
+              <h2 class="aboutMe__title">About Me</h2>
+              <p class="aboutMe__text">Use this area to say something about yourself or describe your goals. Tum
+                dicere exorsus est cur verear,
+                ne ad id omnia referri oporteat,
+                ipsum per se ipsam voluptatem,
+                quia consequuntur magni dolores eos,
+                qui blanditiis praesentium voluptatum deleniti atque insitam in ea quid est eligendi optio,
+                cumque nihil ut ipsi auctori huius disciplinae placet: constituam,
+                quid.</p>
+              <div class="indent">
+                <div class="indent__rectangle"></div>
               </div>
-            </div>
-          </section>
-
-
-
-          <section class="experience">
-            <h2 class="experience__title">Experience</h2>
-            <div class="experience__unit">
-              <div class="experience__header">
-                <h3 class="experience__job">Front-End Developer — Dropbox</h3>
-                <div class="experience__date"></div>
+            </section>
+            <section class="experience">
+              <h2 class="experience__title">Experience</h2>
+              <div class="experience__unit">
+                <div class="experience__header">
+                  <h3 class="experience__job">Front-End Developer — RS School</h3>
+                  <div class="experience__date">Dec. 2022 - till now</div>
+                </div>
+                <p class="experience__desc">Describe your responsibilities. Tum dicere exorsus est cur verear,
+                  ne ad id omnia referri oporteat,
+                  ipsum per se ipsam voluptatem,
+                  quia consequuntur magni dolores eos,
+                  qui blanditiis praesentium voluptatum deleniti atque insitam in ea quid est eligendi optio,
+                  cumque nihil ut ipsi auctori huius disciplinae placet: constituam,
+                  quid.</p>
               </div>
-              <p class="experience__desc">Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad id
-                omnia
-                referri oporteat, ipsum per se ipsam voluptatem, quia consequuntur magni dolores eos, qui blanditiis
-                praesentium voluptatum deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut ipsi
-                auctori
-                huius disciplinae placet: constituam, quid.</p>
-            </div>
-
-          </section>
-
-
-
-          <section class="education">
-            <div class="indent indent--padBottom">
-              <div class="indent__rectangle">
-                <!--  -->
+            </section>
+            <section class="education">
+              <div class="indent indent--padBottom">
+                <div class="indent__rectangle"></div>
               </div>
-            </div>
-            <h2 class="education__title">Education</h2>
-            <div class="experience__unit">
-              <h3 class="education__university">BFA in Graphic Design — James Madison University</h3>
-              <div class="education__date">Graduated 2014</div>
-            </div>
-
-          </section>
+              <h2 class="education__title">Education</h2>
+              <div class="education__unit">
+                <div class="education__study">
+                  <h3 class="education__name">JavaScript/Front-end. Stage 0</h3>
+                  <p class="education__university">RS Scholl</p>
+                </div>
+                <div class="education__date">Feb. 2023</div>
+              </div>
+              <div class="education__unit">
+                <h3 class="education__university">Сourse "Basics of software testing"— QA Academy</h3>
+                <div class="education__date">Oct. 2018</div>
+              </div>
+              <div class="education__unit">
+                <h3 class="education__university">magistracy "Energy"— Belarusian National Technical University</h3>
+                <div class="education__date">July 2015</div>
+              </div>
+            </section>
+            <section class="code">
+              <h2 class="code__title">Code Example</h2>
+              <p class="code__text"><code class="code__content"><a href="#"class="code__btn">Run code</a></code></p>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer--bg">
-      <div class="footer__content">
-        <h4 class="footer__cta">Get in touch!</h4>
-        <a href="#" class="footer__email">e.pavlovich29@gmail.com</a>
-        <ul class="socialList">
-          <li class="socialList__item"><a href="#" class="socialList__link"></a></li>
-          <li class="socialList__item"><a href="#" class="socialList__link"></a></li>
-          <li class="socialList__item"><a href="#" class="socialList__link"></a></li>
-          <li class="socialList__item"><a href="#" class="socialList__link"></a></li>
-          <li class="socialList__item"><a href="#" class="socialList__link"></a></li>
-        </ul>
+    </main>
+    <footer class="footer">
+      <div class="container footer--bg">
+        <div class="footer__content">
+          <h4 class="footer__cta">Get in touch !</h4><a href="#" class="footer__email">e.pavlovich29@gmail.com</a>
+          <ul class="socialList">
+            <li class="socialList__item"><a href="#" class="socialList__link"><img src="/assets/img/social/facebook.svg"
+                  alt="facebook" class="socialList__img"></a></li>
+            <li class="socialList__item"><a href="#" class="socialList__link"><img src="/assets/img/social/github.svg"
+                  alt="github" class="socialList__img"></a></li>
+            <li class="socialList__item"><a href="#" class="socialList__link"><img src="/assets/img/social/linkedin.svg"
+                  alt="linkedin" class="socialList__img"></a></li>
+            <li class="socialList__item"><a href="#" class="socialList__link"><img src="/assets/img/social/discord.svg"
+                  alt="discord" class="socialList__img"></a></li>
+            <li class="socialList__item"><a href="#" class="socialList__link"><img src="" alt=""
+                  class="socialList__img"></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+  <script src="/js/changeTheme.js"></script>
+  <script src="/js/social-Icons.js"></script>
+  <script src="/js/canvas.js"></script>
 </body>
 
 </html>

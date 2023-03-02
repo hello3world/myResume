@@ -7,17 +7,20 @@
     padding: 90px 165px 78px;
   }
 
-
   &__statistics {
     display: flex;
     flex-direction: column;
     row-gap: 100px;
+
+    min-width: 350px;
   }
 
   &__biografy {
     display: flex;
     flex-direction: column;
     row-gap: 66px;
+
+    min-width: 635px;
   }
 }
 
@@ -49,9 +52,17 @@
     @include header3;
   }
 
-  &__list {}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
 
   &__item {}
+
+  &__item--bold {
+    font-weight: 700;
+  }
 }
 
 .recentWorks {
@@ -64,7 +75,20 @@
 
   &__item {}
 
-  &__link {}
+  &__link {
+    position: relative;
+
+    padding: 0 25px 0 0;
+
+    font-weight: 700;
+    color: $colorPrimary;
+
+    &::after {
+      content: "\2192";
+      position: absolute;
+      right: 0;
+    }
+  }
 }
 
 .aboutMe {
@@ -73,7 +97,9 @@
     @include header2;
   }
 
-  &__text {}
+  &__text {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .indent {
@@ -99,7 +125,13 @@
 
   &__unit {}
 
-  &__header {}
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
 
   &__job {
     @include header3;
@@ -115,11 +147,25 @@
 
   &__title {
     @include header2;
+
+    margin-bottom: 20px;
+  }
+
+  &__unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    @include header3;
+    letter-spacing: 1px;
   }
 
   &__university {
-    @include header3;
-    letter-spacing: 1px;
+    font-weight: 700;
   }
 
   &__date {}
