@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+
+  @include textStyle;
+
+  .container {
+    transition: background 0.2s linear;
+  }
+
+  &__canvas {
+    position: relative;
+
+
+  }
+
+  .body-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 80px;
+    color: green;
+
+    transform: translate(0, -50%);
+    transition: opacity ease-in 1s;
+    opacity: 0;
+    animation: blink 2000ms alternate 5s infinite;
+  }
+
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

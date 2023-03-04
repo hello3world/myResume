@@ -1,0 +1,172 @@
+.main {
+
+  &__content {
+    display: flex;
+    column-gap: 125px;
+
+    padding: 90px 165px 78px;
+  }
+
+  &__statistics {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+
+    min-width: 350px;
+  }
+
+  &__biografy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 66px;
+
+    min-width: 635px;
+  }
+}
+
+.skillset {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+.awards {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+.careerTraits {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  &__item {}
+
+  &__item--bold {
+    font-weight: 700;
+  }
+}
+
+.recentWorks {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+
+  &__link {
+    position: relative;
+
+    padding: 0 25px 0 0;
+
+    font-weight: 700;
+    color: $colorPrimary;
+
+    &::after {
+      content: "\2192";
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.aboutMe {
+
+  &__title {
+    @include header2;
+  }
+
+  &__text {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.indent {
+  padding: 80px 0 0;
+
+  &__rectangle {
+    width: 71px;
+    height: 10px;
+
+    background: #0699A6;
+  }
+}
+
+.indent--padBottom {
+  padding: 0 0 80px;
+}
+
+.experience {
+
+  &__title {
+    @include header2;
+  }
+
+  &__unit {}
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__job {
+    @include header3;
+    letter-spacing: 1px;
+  }
+
+  &__date {}
+
+  &__desc {}
+}
+
+.education {
+
+  &__title {
+    @include header2;
+
+    margin-bottom: 20px;
+  }
+
+  &__unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    @include header3;
+    letter-spacing: 1px;
+  }
+
+  &__university {
+    font-weight: 700;
+  }
+
+  &__date {}
+}
