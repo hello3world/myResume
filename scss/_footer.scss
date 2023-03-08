@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 177px 0 111px;
+    padding: 177px 0 75px;
     margin: 0 auto;
 
     max-width: 793px;
@@ -38,6 +38,10 @@
     text-align: center;
     color: $colorPrimary;
   }
+
+  &__socialList {
+  margin-bottom: 40px;
+  }
 }
 
 .socialList {
@@ -48,6 +52,7 @@
 
   max-height: 26px;
 
+
   &__item {}
 
   &__link {
@@ -56,5 +61,6 @@
 
   &__img {
     vertical-align: middle;
+    fill: #0699A6;
   }
 }

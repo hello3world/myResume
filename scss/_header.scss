@@ -21,21 +21,22 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(-120%);
-    transition: all 1s ease-in-out;
+    transition: background 1s ease-in-out,
+      visibility 1s ease-in-out,
+      opacity 1s ease-in-out,
+      transform 1s ease-in-out;
 
     &__close-btn {
       position: absolute;
       top: 0;
-      right: 0;
+      right: -50px;
       border: 0;
-      color: $colorAccent;
+      color: $colorPrimary;
       cursor: pointer;
       font-size: 20px;
       background: transparent;
       opacity: 0;
-      transition: opacity ease-in 0.5s;
-
-
+      transition: opacity ease-in 0.3s;
     }
 
     .close_btn--opacity {
@@ -50,6 +51,10 @@
 
   .contacts--position {
     margin-left: 70px;
+  }
+
+  &__socialList {
+    column-gap: 26px;
   }
 
   .visible {
