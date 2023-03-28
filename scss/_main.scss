@@ -85,7 +85,7 @@
   &__list {}
 
   &__item {
-    position: relative;
+    /*     position: relative;
 
     &:hover {
       &::after {
@@ -101,33 +101,33 @@
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
         opacity: 1;
       }
-    }
+    } */
 
-    &:nth-child(1) {
-      &:hover {
-        &::after {
-          background-image: url('/assets/img/project_Plants.png');
-        }
-      }
+    /* &:nth-child(1) {
+  &:hover {
+    &::after {
+      background-image: url('/assets/img/project_Plants.png');
     }
+  }
+}
 
-    &:nth-child(2) {
-      &:hover {
-        &::after {
-          background-image: url('/assets/img/project_Vilocity.png');
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-        }
-      }
+&:nth-child(2) {
+  &:hover {
+    &::after {
+      background-image: url('/assets/img/project_Vilocity.png');
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     }
+  }
+}
 
-    &:nth-child(3) {
-      &:hover {
-        &::after {
-          background-image: url('/assets/img/project_Vilocity.png');
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-        }
-      }
+&:nth-child(3) {
+  &:hover {
+    &::after {
+      background-image: url('/assets/img/project_Vilocity.png');
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     }
+  }
+} */
   }
 
   &__link {
@@ -138,7 +138,17 @@
     font-weight: 700;
     color: $colorPrimary;
 
+
+    &:hover {
+      &::after {
+        content: "\2192";
+        position: absolute;
+        right: -5px;
+      }
+    }
+
     &::after {
+      transition: right ease-in-out 0.3s;
       content: "\2192";
       position: absolute;
       right: 0;
@@ -166,7 +176,12 @@
 
   &__text {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
   }
+
 }
 
 .indent {

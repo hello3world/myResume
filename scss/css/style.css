@@ -263,31 +263,48 @@ a {
   color: #9E8C6C;
 }
 .recentWorks__item {
-  position: relative;
-}
-.recentWorks__item:hover::after {
-  content: "";
-  display: inline-block;
-  width: 200px;
-  height: 146px;
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  opacity: 1;
-}
-.recentWorks__item:nth-child(1):hover::after {
-  background-image: url("/assets/img/project_Plants.png");
-}
-.recentWorks__item:nth-child(2):hover::after {
-  background-image: url("/assets/img/project_Vilocity.png");
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.recentWorks__item:nth-child(3):hover::after {
-  background-image: url("/assets/img/project_Vilocity.png");
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  /*     position: relative;
+
+  &:hover {
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 200px;
+      height: 146px;
+      position: absolute;
+      bottom: 35px;
+      left: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+    }
+  } */
+  /* &:nth-child(1) {
+    &:hover {
+      &::after {
+        background-image: url('/assets/img/project_Plants.png');
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &:hover {
+      &::after {
+        background-image: url('/assets/img/project_Vilocity.png');
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &:hover {
+      &::after {
+        background-image: url('/assets/img/project_Vilocity.png');
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  } */
 }
 .recentWorks__link {
   position: relative;
@@ -295,7 +312,13 @@ a {
   font-weight: 700;
   color: #0699A6;
 }
+.recentWorks__link:hover::after {
+  content: "→";
+  position: absolute;
+  right: -5px;
+}
 .recentWorks__link::after {
+  transition: right ease-in-out 0.3s;
   content: "→";
   position: absolute;
   right: 0;
@@ -319,6 +342,9 @@ a {
 }
 .aboutMe__text {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.aboutMe__text:not(:last-of-type) {
+  margin-bottom: 10px;
 }
 
 .indent {
