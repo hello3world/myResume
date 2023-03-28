@@ -1,6 +1,10 @@
 .dark {
   color: $colorTextDark;
 
+  a {
+    color: #fff
+  }
+
   .container {
     background: $bgColorDark;
   }
@@ -52,6 +56,12 @@
         color: $colorTextDark;
       }
 
+    }
+
+    .code {
+      &__title {
+        color: $colorTextDark;
+      }
     }
   }
 
