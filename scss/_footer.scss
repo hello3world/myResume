@@ -1,7 +1,7 @@
 .footer {
 
   .footer--bg {
-    background-image: url('/assets/img/bgFooter.png');
+    background-image: url('../../assets/img/bgFooter.png');
     background-repeat: no-repeat;
     background-position: bottom center;
   }
@@ -40,7 +40,7 @@
   }
 
   &__socialList {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 

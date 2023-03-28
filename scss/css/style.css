@@ -436,7 +436,7 @@ a {
 }
 
 .footer .footer--bg {
-  background-image: url("/assets/img/bgFooter.png");
+  background-image: url("../../assets/img/bgFooter.png");
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -488,7 +488,7 @@ a {
 }
 
 .header .header--bg {
-  background-image: url("/assets/img/bgHeader.png");
+  background-image: url("../../assets/img/bgHeader.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
