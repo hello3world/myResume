@@ -555,7 +555,7 @@ a {
   left: 238px;
   width: 152px;
   height: 152px;
-  background-image: url("/assets/greeting.svg");
+  background-image: url("../../assets/greeting.svg");
   background-repeat: no-repeat;
 }
 .header__job {
@@ -606,7 +606,7 @@ a {
   background-color: #000;
 }
 .dark .header .header--bg {
-  background-image: url("/assets/img/bgHeaderDark.png");
+  background-image: url("../../assets/img/bgHeaderDark.png");
   background-repeat: no-repeat;
 }
 .dark .header__name {
@@ -628,7 +628,7 @@ a {
   color: #ffffff;
 }
 .dark .footer .footer--bg {
-  background-image: url("/assets/img/bgFooterDark.png");
+  background-image: url("../../assets/img/bgFooterDark.png");
   background-repeat: no-repeat;
 }
 .dark .footer__cta {
