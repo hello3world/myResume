@@ -161,6 +161,12 @@ a {
   width: 50px;
   transform: scale(1.5);
 }
+@media (max-width: 768px) {
+  .label {
+    height: 16px;
+    width: 31px;
+  }
+}
 
 .label .ball {
   background-color: #fff;
@@ -173,44 +179,70 @@ a {
   transform: translateX(0px);
   transition: transform 0.2s linear;
 }
+@media (max-width: 768px) {
+  .label .ball {
+    height: 12px;
+    width: 12px;
+  }
+}
 
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
+}
+@media (max-width: 768px) {
+  .checkbox:checked + .label .ball {
+    transform: translateX(15px);
+  }
 }
 
 .fa-moon {
   font-size: 18px;
   color: #f1c40f;
 }
+@media (max-width: 768px) {
+  .fa-moon {
+    font-size: 10px;
+  }
+}
 
 .fa-sun {
   font-size: 18px;
   color: #f1c40f;
 }
+@media (max-width: 768px) {
+  .fa-sun {
+    font-size: 9px;
+  }
+}
 
+.main {
+  width: 100%;
+}
 .main__content {
+  width: 100%;
   display: flex;
-  -moz-column-gap: 125px;
-       column-gap: 125px;
-  padding: 90px 165px 78px;
+  justify-content: space-between;
+  -moz-column-gap: 8.68%;
+       column-gap: 8.68%;
+  padding: 6.25% 11.458%;
 }
 .main__statistics {
   display: flex;
   flex-direction: column;
   row-gap: 100px;
-  min-width: 350px;
+  width: 24.3%;
 }
 .main__biografy {
   display: flex;
   flex-direction: column;
   row-gap: 66px;
-  min-width: 635px;
+  width: 56%;
 }
 
 .skillset__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -219,7 +251,7 @@ a {
 .awards__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -238,7 +270,7 @@ a {
 .careerTraits__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -256,7 +288,7 @@ a {
 .recentWorks__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -327,7 +359,7 @@ a {
 .language__title {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -336,7 +368,7 @@ a {
 .aboutMe__title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 180%;
   line-height: 1.28;
   color: #000000;
 }
@@ -348,7 +380,7 @@ a {
 }
 
 .indent {
-  padding: 80px 0 0;
+  padding: 12.9% 0 0;
 }
 .indent__rectangle {
   width: 71px;
@@ -363,7 +395,7 @@ a {
 .experience__title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 180%;
   line-height: 1.28;
   color: #000000;
 }
@@ -376,7 +408,7 @@ a {
 .experience__job {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -386,7 +418,7 @@ a {
 .education__title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 180%;
   line-height: 1.28;
   color: #000000;
   margin-bottom: 20px;
@@ -400,7 +432,7 @@ a {
 .education__name {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -417,7 +449,7 @@ a {
 .code__title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 180%;
   line-height: 1.28;
   color: #000000;
   margin-bottom: 20px;
@@ -435,6 +467,9 @@ a {
   border-bottom-width: 0;
 }
 
+.footer {
+  width: 100%;
+}
 .footer .footer--bg {
   background-image: url("../../assets/img/bgFooter.png");
   background-repeat: no-repeat;
@@ -453,20 +488,30 @@ a {
   margin-bottom: 40px;
   font-family: "Playfair Display";
   font-weight: 900;
-  font-size: 66px;
+  font-size: 412%;
   line-height: 1.24;
   text-align: center;
   letter-spacing: -1.1px;
   color: #000000;
 }
+@media (max-width: 950px) {
+  .footer__cta {
+    font-size: 312%;
+  }
+}
 .footer__email {
   margin-bottom: 66px;
   font-family: "Playfair Display";
   font-weight: 900;
-  font-size: 36px;
+  font-size: 225%;
   line-height: 1.28;
   text-align: center;
   color: #0699A6;
+}
+@media (max-width: 950px) {
+  .footer__email {
+    font-size: 180%;
+  }
 }
 .footer__socialList {
   margin-bottom: 40px;
@@ -487,15 +532,20 @@ a {
   fill: #0699A6;
 }
 
+.header {
+  width: 100%;
+}
 .header .header--bg {
   background-image: url("../../assets/img/bgHeader.png");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100%;
 }
 .header__toolbar {
   display: flex;
   justify-content: space-between;
-  padding: 30px 70px 0 0;
+  width: 100%;
+  padding: 2.08% 4.86% 0 0;
 }
 .header .contacts {
   position: relative;
@@ -541,50 +591,79 @@ a {
 .header__content {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 125px;
-       column-gap: 125px;
+  align-items: center;
+  -moz-column-gap: 17%;
+       column-gap: 17%;
   position: relative;
-  max-width: 1110px;
+  width: 100%;
+  /*  max-width: 1110px; */
   margin: 0 auto;
-  padding: 125px 0 209px;
+  padding: 8.68% 11.25% 19.5138%;
 }
 .header__content::before {
   content: "";
   position: absolute;
-  top: 365px;
-  left: 238px;
+  top: 44.347%;
+  left: 25.5277%;
   width: 152px;
   height: 152px;
   background-image: url("../../assets/greeting.svg");
   background-repeat: no-repeat;
 }
+@media (max-width: 1200px) {
+  .header__content::before {
+    display: none;
+  }
+}
+.header__info {
+  width: 100%;
+}
+.header__avatar {
+  width: 27.3%;
+  height: 27.3%;
+}
 .header__job {
-  margin-bottom: 10px;
+  margin-bottom: 0.69%;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 110%;
   line-height: 1.33;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #9E8C6C;
 }
 .header__name {
-  margin-bottom: 40px;
+  margin-bottom: 6.3%;
   font-family: "Playfair Display";
   font-weight: 900;
-  font-size: 126px;
+  font-size: 650%;
   line-height: 0.89;
   letter-spacing: -2px;
   color: #000000;
 }
+@media (max-width: 950px) {
+  .header__name {
+    font-size: 450%;
+  }
+}
+@media (max-width: 645px) {
+  .header__name {
+    font-size: 350%;
+  }
+}
+@media (max-width: 450px) {
+  .header__name {
+    font-size: 250%;
+  }
+}
 .header__btn {
-  padding: 19px 60px;
+  padding: 3% 9.448%;
   font-family: "PT Sans Narrow";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 130%;
   line-height: 1.33;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.1vw;
   text-transform: uppercase;
   color: #FFFFFF;
   background: #0699A6;
@@ -640,14 +719,26 @@ a {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 body {
+  width: 100%;
+  font-size: 20%;
   font-family: "PT Sans Narrow", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 100%;
   line-height: 1.7;
   color: #000000;
 }
@@ -656,6 +747,9 @@ body .container {
 }
 body__canvas {
   position: relative;
+}
+body__content {
+  width: 100%;
 }
 body .body-btn {
   position: absolute;
@@ -688,6 +782,11 @@ body .body-btn {
   }
 }
 .container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }

@@ -3,10 +3,20 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
+
+  @media (max-width:768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width:576px) {
+    font-size: 10px;
+  }
 }
 
 body {
+  width: 100%;
+  font-size: 20%;
 
   @include textStyle;
 
@@ -16,8 +26,10 @@ body {
 
   &__canvas {
     position: relative;
+  }
 
-
+  &__content {
+    width: 100%;
   }
 
   .body-btn {
@@ -47,6 +59,11 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }

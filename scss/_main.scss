@@ -1,26 +1,26 @@
 .main {
+  width: 100%;
 
   &__content {
+    width: 100%;
     display: flex;
-    column-gap: 125px;
-
-    padding: 90px 165px 78px;
+    justify-content: space-between;
+    column-gap: 8.68%;
+    padding: 6.25% 11.458%;
   }
 
   &__statistics {
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-
-    min-width: 350px;
+    width: 24.3%;
   }
 
   &__biografy {
     display: flex;
     flex-direction: column;
     row-gap: 66px;
-
-    min-width: 635px;
+    width: 56%;
   }
 }
 
@@ -185,7 +185,7 @@
 }
 
 .indent {
-  padding: 80px 0 0;
+  padding: 12.9% 0 0;
 
   &__rectangle {
     width: 71px;

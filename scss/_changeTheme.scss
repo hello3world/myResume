@@ -20,6 +20,11 @@
   height: 26px;
   width: 50px;
   transform: scale(1.5);
+
+  @media (max-width:768px) {
+    height: 16px;
+    width: 31px;
+  }
 }
 
 .label .ball {
@@ -32,19 +37,36 @@
   width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+
+  @media (max-width:768px) {
+    height: 12px;
+    width: 12px;
+  }
 }
 
 .checkbox:checked+.label .ball {
   transform: translateX(24px);
+
+  @media (max-width:768px) {
+    transform: translateX(15px);
+  }
 }
 
 
 .fa-moon {
   font-size: 18px;
   color: #f1c40f;
+
+  @media (max-width:768px) {
+    font-size: 10px;
+  }
 }
 
 .fa-sun {
   font-size: 18px;
   color: #f1c40f;
+
+  @media (max-width:768px) {
+    font-size: 9px;
+  }
 }
