@@ -1,16 +1,18 @@
 .header {
+  width: 100%;
 
   .header--bg {
     background-image: url('../../assets/img/bgHeader.png');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 100%;
   }
 
   &__toolbar {
     display: flex;
     justify-content: space-between;
-
-    padding: 30px 70px 0 0;
+    width: 100%;
+    padding: 2.08% 4.86% 0 0;
   }
 
   .contacts {
@@ -46,7 +48,6 @@
     &__close-btn:focus {
       outline: none;
     }
-
   }
 
   .contacts--position {
@@ -66,56 +67,79 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    column-gap: 125px;
+    align-items: center;
+    column-gap: 17%;
 
     position: relative;
 
-    max-width: 1110px;
+    width: 100%;
+    /*  max-width: 1110px; */
     margin: 0 auto;
-    padding: 125px 0 209px;
+    padding: 8.68% 11.25% 19.5138%;
 
     &::before {
       content: "";
       position: absolute;
-      top: 365px;
-      left: 238px;
+      top: 44.347%;
+      left: 25.5277%;
       width: 152px;
       height: 152px;
       background-image: url('../../assets/greeting.svg');
       background-repeat: no-repeat;
+
+      @media (max-width:1200px) {
+        display: none;
+      }
     }
   }
 
-  &__avatar {}
+  &__info {
+    width: 100%;
+  }
 
-  &__info {}
+  &__avatar {
+    width: 27.3%;
+    height: 27.3%;
+  }
 
   &__job {
-    margin-bottom: 10px;
+    margin-bottom: 0.69%;
 
     @include header3;
   }
 
   &__name {
-    margin-bottom: 40px;
+    margin-bottom: 6.3%;
 
     font-family: 'Playfair Display';
     font-weight: 900;
-    font-size: 126px;
+    font-size: 650%;
     line-height: 0.89;
     letter-spacing: -2px;
     color: $colorText;
+
+    @media (max-width:950px) {
+      font-size: 450%;
+    }
+
+    @media (max-width:645px) {
+      font-size: 350%;
+    }
+
+    @media (max-width:450px) {
+      font-size: 250%;
+    }
   }
 
   &__btn {
-    padding: 19px 60px;
+    padding: 3% 9.448%;
 
     font-family: 'PT Sans Narrow';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 130%;
     line-height: 1.33;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 0.1vw;
     text-transform: uppercase;
     color: #FFFFFF;
     background: $colorPrimary;
